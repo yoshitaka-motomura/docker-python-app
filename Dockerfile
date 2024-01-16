@@ -13,6 +13,10 @@ COPY ./src .
 
 ENV FLASK_APP=app.py
 
+# Healthcheck
+HEALTHCHECK --interval=5s --timeout=3s \
+  CMD curl -f http://0.0.0.0:8000/health || exit 1
+
 ## Expose port because gunicorn is running on this port
 EXPOSE 8000
 
