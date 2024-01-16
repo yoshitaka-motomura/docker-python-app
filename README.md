@@ -20,3 +20,4 @@ flask --app src/app run
 
 ## references
 - [Flask production recipe](https://www.toptal.com/flask/flask-production-recipes)
+- [gunicorn](https://flask.palletsprojects.com/en/3.0.x/deploying/gunicorn/)
